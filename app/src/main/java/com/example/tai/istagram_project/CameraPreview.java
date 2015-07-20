@@ -4,7 +4,8 @@ package com.example.tai.istagram_project;
  * Created by TAI on 10/07/2015.
  */
 
-        import java.io.IOException;
+
+       import java.io.IOException;
 
         import android.content.Context;
         import android.hardware.Camera;
