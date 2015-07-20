@@ -61,8 +61,6 @@ public class Adapter_ListView_Following extends BaseAdapter {
             holder.time = (TextView) convertView.findViewById(R.id.tvTime);
             holder.icon = (ImageView) convertView.findViewById(R.id.imageContact);
 
-
-
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
@@ -73,7 +71,6 @@ public class Adapter_ListView_Following extends BaseAdapter {
         holder.name.setText(sg1.getName());
         holder.time.setText(sg1.getTime());
         holder.icon.setImageBitmap(sg1.getIcon());
-
 
 
         return convertView;
