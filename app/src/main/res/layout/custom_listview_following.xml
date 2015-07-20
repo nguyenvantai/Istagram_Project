@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView android:id="@+id/imageView_follow"
+    android:layout_height="40dp"
+    android:layout_width="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"/>
+    <TextView android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView_follow"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/imageView_follow"/>
+    <TextView android:id="@+id/tvLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvName"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/imageView_follow"
+        android:text="liked 8 photos"/>
+    <TextView android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvLike"
+        android:layout_alignBaseline="@+id/imageView_follow"
+        android:layout_marginLeft="5dp"
+
+        />
+    <ImageView android:id="@+id/imageContact"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView_follow"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+    </RelativeLayout>
+
+

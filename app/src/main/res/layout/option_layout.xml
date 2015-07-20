@@ -1,0 +1,338 @@
+<RelativeLayout
+    android:id="@+id/linearOption"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/l2"
+        android:background="#003366"
+        >
+        <ImageButton android:id="@+id/comeback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/muiten"
+            android:onClick="onClickComeBack"></ImageButton>
+        <TextView android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/options"
+            android:layout_toRightOf="@+id/comeback"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"></TextView>
+
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l2">
+    <RelativeLayout android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/l2">
+
+
+        <TextView android:id="@+id/tvFollow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/followpeople"
+            android:textColor="#000000"></TextView>
+        <View  android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvFollow"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find"
+            android:textColor="#000000"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="5dp"></TextView>
+        <ImageView android:id="@+id/imageFacebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/heart"
+            android:layout_alignBottom="@id/tvFind"
+            android:layout_alignTop="@id/tvFind"
+            android:layout_alignParentRight="true"
+            android:onClick="onCLickChange"></ImageView>
+        <View  android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvFind"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts"
+            android:textColor="#000000"
+            android:layout_below="@+id/imageFacebook"
+            android:layout_marginTop="10dp"></TextView>
+        <ImageView android:id="@+id/imagePeople"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/heart"
+            android:layout_alignBottom="@id/tvcontact"
+            android:layout_alignTop="@id/tvcontact"
+            android:onClick="onCLickChange"
+            android:layout_alignParentRight="true"></ImageView>
+        <View  android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvcontact"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tviinvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invite"
+        android:textColor="#000000"
+        android:layout_below="@+id/tvcontact"
+        android:layout_marginTop="10dp"></TextView>
+    <View  android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tviinvite"
+        android:layout_marginTop="5dp"
+        android:background="#BBBBBB"
+        ></View>
+    <TextView android:id="@+id/tvaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account"
+        android:textColor="#000000"
+        android:layout_below="@+id/tviinvite"
+        android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvaccount"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editprofile"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvaccount"
+            android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvedit"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvchang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvedit"
+            android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvchang"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvposts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/posts"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvchang"
+            android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvposts"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvprivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privateacount"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvposts"
+            android:layout_marginTop="15dp"></TextView>
+        <ImageButton android:id="@+id/imgButton"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvposts"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:onClick="onCLickChange"
+            android:background="@drawable/drawable_adjust"></ImageButton>
+        <View  android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvprivate"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            android:textColor="#BBBBBB"
+            android:layout_below="@+id/tvprivate"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp"
+            ></TextView>
+        <TextView android:id="@+id/tvsettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvtext"
+            android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvtext"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+
+            ></View>
+
+        <TextView android:id="@+id/tvlinked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/linked"
+        android:textColor="#000000"
+        android:layout_below="@+id/tvsettings"
+        android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvlinked"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvpush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/push"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvlinked"
+            android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view11"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvpush"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvpush"
+            android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvcamera"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvcell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cellular"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvcamera"
+            android:layout_marginTop="15dp"></TextView>
+        <View  android:id="@+id/view13"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvcell"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvcell"
+            android:layout_marginTop="15dp"></TextView>
+        <ImageButton android:id="@+id/imgButton2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvcell"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/drawable_adjust"
+            android:onClick="onCLickChange1"></ImageButton>
+        <View  android:id="@+id/view14"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvsave"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvsavevideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/savevideo"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvsave"
+            android:layout_marginTop="15dp"></TextView>
+        <ImageButton android:id="@+id/imgButton3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvsave"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/drawable_adjust"
+            android:onClick="onCLickChange2"></ImageButton>
+        <View  android:id="@+id/view15"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvsavevideo"
+            android:layout_marginTop="5dp"
+            android:background="#BBBBBB"
+            ></View>
+        <TextView android:id="@+id/tvsaving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saving"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvsavevideo"
+            android:layout_marginTop="15dp"></TextView>
+        <TextView android:id="@+id/tvsupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvsaving"
+            android:layout_marginTop="25dp"></TextView>
+
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+

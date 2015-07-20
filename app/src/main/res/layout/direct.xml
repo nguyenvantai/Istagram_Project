@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    android:background="#003366">
+    <ImageButton android:id="@+id/imgBack"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/muiten"
+        android:onClick="onClickBack"></ImageButton>
+    <TextView android:id="@+id/direct"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:text="DIRECT"
+        android:layout_gravity="center_vertical"></TextView>
+    <ImageButton android:id="@+id/imageButtom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dc"
+        android:onClick="onClickCamera"
+        ></ImageButton>
+
+
+
+</LinearLayout>
+    <LinearLayout android:id="@+id/ln"
+        android:layout_below="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:text="Send a photo or video"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"></TextView>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lnear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ln"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/textView9"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="5"
+            >
+            <ImageView android:id="@+id/imga"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:background="@drawable/a"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"></TextView>
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:text="Istagram direct"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:gravity="center"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/character"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#BBBBBB"
+            android:textSize="20dp"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView11" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+

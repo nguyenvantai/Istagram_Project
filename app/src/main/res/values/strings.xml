@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Istagram_Project</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name ="character">Send photos and videos
+    directly to your friends. Only the people you send to can see these posts</string>
+    <string name="char1">Saving videps to your phone uses more storage space</string>
+    <string name="edit">EDIT YOUR PROFILE</string>
+    <string name="options">OPTIONS</string>
+    <string name="tai">Van Tai Nguyen</string>
+    <string name="address">https://www.facebook.com/nguyenvan.tai.37266></string>
+    <string name="followpeople">FOLLOW PEOPLE</string>
+    <string name="find">Find Facebook Friends</string>
+    <string name="contacts">9 COntacts</string>
+    <string name="invite">Invite Friendss</string>
+    <string name="account">ACCOUNT</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="change">Change Password</string>
+    <string name="posts">Posts You/ve Liked</string>
+    <string name="privateacount">Private Account</string>
+    <string name="text">When your account is private,only people you approve can see your photos and videos
+    . Your exitsting followers wont be affected.</string>
+    <string name="setting">SETTINGS</string>
+    <string name="linked">Linked Accounts</string>
+    <string name="push">Push Notifications</string>
+    <string name="camera">Camera</string>
+    <string name="cellular">Cellular Data Use</string>
+    <string name="save">Save Original Photos</string>
+    <string name="savevideo">Save Videos After Posting</string>
+    <string name="saving">Saving videos to your phone uses more storage space</string>
+    <string name="support">SUPPORT</string>
+    <string name="istagram">Istagram Help Center</string>
+    <string name="report">Report a Problem</string>
+    <string name="about">ABOUT</string>
+    <string name="ads">Ads</string>
+    <string name="blog">Blog</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="term">Terms of Service</string>
+    <string name="open">Open Source Libraries</string>
+    <string name="clear">Clear Search History</string>
+    <string name="logout">Log Out</string>
+
+
+
+
+
+
+
+
+</resources>

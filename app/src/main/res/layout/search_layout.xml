@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/lo1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#003366">
+        <ImageView android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image1"
+            android:background="@drawable/search6"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            ></ImageView>
+
+        <ImageView android:layout_width="70dp"
+            android:layout_height="15dp"
+            android:id="@+id/image2"
+            android:background="@drawable/search5"
+            android:layout_toRightOf="@+id/image1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+
+            ></ImageView>
+        <EditText android:id="@+id/edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image1"
+            android:layout_marginBottom="5dp"></EditText>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ret1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lo1"
+        android:layout_margin="15dp">
+        <TextView android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover People"></TextView>
+        <TextView android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find new people to foll... "
+            android:layout_below="@+id/tv1"
+            android:clickable="true"
+            android:onClick="onClickPeopleSuggestion"></TextView>
+        <RelativeLayout android:id="@+id/oki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv2"
+            android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/imge1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/profile"
+            android:adjustViewBounds="true"></ImageView>
+        <ImageView android:id="@+id/imge2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/imge1"
+            android:background="@drawable/profile"
+            android:adjustViewBounds="true"></ImageView>
+        <ImageView android:id="@+id/imge3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/imge2"
+            android:background="@drawable/profile"
+            android:adjustViewBounds="true"></ImageView>
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imge3"
+                android:background="@drawable/cont"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:onClick="onClickPeopleSuggestion"></ImageView>
+
+
+</RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageView android:id="@+id/im"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ret1"
+        android:background="@drawable/icon_home"
+        android:adjustViewBounds="true"></ImageView>
+
+
+</RelativeLayout>

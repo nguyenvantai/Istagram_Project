@@ -1,0 +1,51 @@
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+   <RelativeLayout android:id="@+id/ln1"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="#003366">
+
+
+        <ImageView android:id="@+id/istagram"
+            android:layout_width="wrap_content"
+           android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/istagram"
+
+            ></ImageView>
+
+        <ImageButton android:id="@+id/table"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/table"
+            android:onClick="onClickImageButton"
+            android:adjustViewBounds="true"></ImageButton>
+
+
+</RelativeLayout >
+<RelativeLayout android:id="@+id/t1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ln1">
+
+</RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln1"
+        android:id="@+id/lvHome"
+        android:layout_marginTop="15dp"
+        />
+
+
+</RelativeLayout>
